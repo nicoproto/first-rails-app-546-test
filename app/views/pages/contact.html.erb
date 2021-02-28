@@ -1,1 +1,10 @@
 <h1>And I'm the contact page!</h1>
+
+<h2>Meet our ninjas</h2>
+<ul>
+  <% @turtles.each do |turtle| %>
+    <li>
+      <%= turtle.capitalize %>
+    </li>
+  <% end %>
+</ul>
